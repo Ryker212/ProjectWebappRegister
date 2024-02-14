@@ -58,9 +58,9 @@ app.post("/register",async (req, res) => {
         const { first_name, last_name, email, password } = req.body;
 
         //validate user input
-        if(!(email && password && first_name & last_name)) {
+        /*if(!(email && password && first_name & last_name)) {
             res.status(400).send("All input is requried");
-        }
+        }*/
 
         // check if user already exit
         // validate if user exit in our database
